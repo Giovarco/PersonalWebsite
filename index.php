@@ -27,12 +27,12 @@
                     <!-- Name area -->
                     <div class="col align-self-center">
                         <div class="presentationAreaText">
-                            <h1 class="text-right">
+                            <h1 class="text-right titleFontFamily">
                                 MARIO
                                 <br>
                                 MIGNEMI
                             </h1>
-                            <h2 class="text-right">
+                            <h2 class="text-right subtitleFontFamily">
                                 Bachelor's Degree in
                                 <br>
                                 Computer Science
@@ -47,7 +47,28 @@
 
                 </div>
 
+                <!-- About Me -->
+                <div class="row">
 
+                    <div class="col section text-center ash-grey">
+
+                        <div class="row mb-4">
+                            <h1 class="w-100 titleFontFamily font-italic font-weight-bold ">
+                                About me
+                            </h1>
+                        </div>
+
+                        <div class="row">
+                            <p class="w-100 subtitleFontFamily">
+                                I am a recent graduate in Computer Science with a foreign languages diploma and some work experience whosedream is to become a full-time software developer.
+                            </p>
+                        </div>
+
+                    </div>
+                    
+
+                   
+                </div>
 		</div>
 
 		<?php require "php/common/jsForBootstrap.php"?>

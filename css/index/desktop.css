@@ -6,18 +6,38 @@
     background-color:#443e3e;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 130px;
 }
 
-h1 {
+.titleFontFamily {
+    font-family: 'Times New Roman', serif;
+}
+
+.subtitleFontFamily {
+    font-family: sans-serif;
+}
+
+.presentationArea h1 {
     color: white;
     font-weight: bold;
     font-style: italic;
-    font-family: 'Times New Roman', serif;
     font-size: 60px;
 }
 
-h2 {
+.presentationArea h2 {
     color: white;
     font-size: 23px;
-    font-family: sans-serif;
+}
+
+.section {
+    padding-left: 31%;
+    padding-right: 31%;
+}
+
+p {
+    line-height: 28px;
+}
+
+.ash-grey {
+    color: #383838;
 }
