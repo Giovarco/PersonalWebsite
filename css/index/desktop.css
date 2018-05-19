@@ -1,0 +1,23 @@
+.presentationAreaText {
+    padding-right: 25%;
+}
+
+.presentationArea {
+    background-color:#443e3e;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', serif;
+    font-size: 60px;
+}
+
+h2 {
+    color: white;
+    font-size: 23px;
+    font-family: sans-serif;
+}
