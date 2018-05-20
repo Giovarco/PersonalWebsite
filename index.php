@@ -98,6 +98,53 @@
 
             </div>
 
+            <!-- Education -->
+            <div class="row sectionGap">
+
+                <div class="col text-center ash-grey">
+
+                    <div class="circle">
+
+                        <div class="row mb-4">
+                            <h1 class="w-100 titleFontFamily font-italic font-weight-bold ">
+                                Education
+                            </h1>
+                        </div>
+
+                        <div class="row">
+
+                            <p class="w-100 font-weight-bold mb-2">
+                                Oct 2013 – Feb 2017
+                                <br>
+                                University of Catania
+                            </p>
+
+                            <p class="w-100 subtitleFontFamily mb-5">
+                                The bachelor's degree in Computer Science includes activities aimed at acquiring basic knowledge of discrete mathematics and differential and integral calculus, along with fundamental knowledge on key areas of information technology (including, theoretica foundations of computer science, algorithms, operating systems, databases, and HCI, software engineering, Computer Networks and Information Systems Security)
+                            </p>
+                            
+                            <br><br><br>
+
+                            <p class="w-100 font-weight-bold  mb-2">
+                                Sep 2008–Jun 2013
+                                <br>
+                                Liceo Statale "Ettore Majorana"
+                            </p>
+
+                            <p class="w-100 subtitleFontFamily">
+                                Foreign Languages Diploma
+                                <br><br>
+                                Studied languages: English, French, Spanish, Latin
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
 		</div>
 
 		<?php require "php/common/jsForBootstrap.php"?>
