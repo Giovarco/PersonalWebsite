@@ -74,13 +74,14 @@
 
                     <div class="circle">
 
-                        <div class="row mb-4">
-                            <h1 class="w-100 titleFontFamily font-italic font-weight-bold ">
+                        <div class="row">
+
+                            <!-- Title -->
+                            <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4">
                                 A brief story
                             </h1>
-                        </div>
 
-                        <div class="row">
+                            <!-- Description -->
                             <p class="w-100 subtitleFontFamily">
                                 Learning how to program has always been the goal of my life. It started with videogames, which I always have had an affinity with. Playing has never been enough nonetheless. What were there really behind them?
                                 <br><br>
@@ -105,37 +106,133 @@
 
                     <div class="circle">
 
-                        <div class="row mb-4">
-                            <h1 class="w-100 titleFontFamily font-italic font-weight-bold ">
-                                Education
-                            </h1>
-                        </div>
-
                         <div class="row">
 
+                            <!-- Title -->
+                            <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4">
+                                Education
+                            </h1>
+
+                            <!-- University of Catania -->
                             <p class="w-100 font-weight-bold mb-2">
                                 Oct 2013 – Feb 2017
                                 <br>
                                 University of Catania
                             </p>
 
+                            <!-- Description -->
                             <p class="w-100 subtitleFontFamily mb-5">
                                 The bachelor's degree in Computer Science includes activities aimed at acquiring basic knowledge of discrete mathematics and differential and integral calculus, along with fundamental knowledge on key areas of information technology (including, theoretica foundations of computer science, algorithms, operating systems, databases, and HCI, software engineering, Computer Networks and Information Systems Security)
                             </p>
                             
                             <br><br><br>
 
+                            <!-- Liceo Statale "Ettore Majorana" -->
                             <p class="w-100 font-weight-bold  mb-2">
                                 Sep 2008–Jun 2013
                                 <br>
                                 Liceo Statale "Ettore Majorana"
                             </p>
 
+                            <!-- Description -->
                             <p class="w-100 subtitleFontFamily">
                                 Foreign Languages Diploma
                                 <br><br>
                                 Studied languages: English, French, Spanish, Latin
                             </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Working Experience -->
+            <div class="row sectionGap">
+
+                <div class="col text-center ash-grey">
+
+                    <div class="circle">
+
+                        <div class="row">
+                                
+                            <!-- Title -->
+                            <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4 ">
+                                Working Experience
+                            </h1>
+
+                            <!-- Internship at Imagination Computer Services -->
+                            <p class="w-100 font-weight-bold mb-2">
+                                Jun 2017–Aug 2017
+                                <br>
+                                Internship at Imagination Computer Services
+                            </p>
+
+                            <!-- Description -->
+                            <p class="w-100 subtitleFontFamily text-left mb-0">
+                                Duties:
+                            </p>
+                            <ul class="subtitleFontFamily text-left mb-5">
+                                <li>Build an authentication system to control the access to company services</li>
+                                <li>Program mockups</li>
+                                <li>Read and process large XML streams</li>
+                            </ul>
+                            
+                            <br><br><br>
+
+                            <!-- Voluntary work at Riot Games -->
+                            <p class="w-100 font-weight-bold mb-2">
+                                Jan 2016–Aug 2016
+                                <br>
+                                Voluntary work at Riot Games
+                            </p>
+
+                            <!-- Description -->
+                            <p class="w-100 subtitleFontFamily text-left mb-0">
+                                Duties:
+                            </p>
+                            <ul class="subtitleFontFamily text-left mb-5">
+                                <li>Translate game content from English to Italian</li>
+                                <li>Take part in meeting and brainstormings with other european volunteers to organize collective projects or contests</li>
+                                <li>Moderate the italian board through the back-end platform</li>
+                                <li>Offer generic support to players</li>
+                            </ul>
+
+                            <!-- Tutoring at Art School of Catania -->
+                            <p class="w-100 font-weight-bold mb-2">
+                                Nov 2014 – Feb 2015
+                                <br>
+                                Tutoring at Art School of Catania
+                            </p>
+
+                            <!-- Description -->
+                            <p class="w-100 subtitleFontFamily text-left mb-0">
+                                Duties:
+                            </p>
+                            <ul class="subtitleFontFamily text-left mb-5">
+                                <li>Give lectures of artistic programming using Processing (Java)</li>
+                                <li>Clarify doubts of students</li>
+                            </ul>
+
+                            <!--  -->
+                            <p class="w-100 font-weight-bold mb-2">
+                                Nov 2017 – Today
+                                <br>
+                                Analyst at Deloitte Consulting
+                            </p>
+
+                            <!-- Description -->
+                            <p class="w-100 subtitleFontFamily text-left mb-0">
+                                Duties:
+                            </p>
+                            <ul class="subtitleFontFamily text-left mb-5">
+                                <li>Implementation and maintenance of front-end and back-end features</li>
+                                <li>Customer Support</li>
+                            </ul>
+
+
 
                         </div>
 
