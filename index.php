@@ -216,7 +216,7 @@
                                 <li>Clarify doubts of students</li>
                             </ul>
 
-                            <!--  -->
+                            <!-- Analyst at Deloitte Consulting -->
                             <p class="w-100 font-weight-bold mb-2">
                                 Nov 2017 – Today
                                 <br>
@@ -242,7 +242,55 @@
 
             </div>
 
-		</div>
+            <!-- Contact Me -->
+            <div class="row sectionGap">
+
+                <div class="col ash-grey">
+
+                    <div class="circle">
+
+                        <!-- Form -->
+                        <div class="form-row text-left">
+                                
+                            <!-- Title -->
+                            <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4 text-center">
+                                Contact Me
+                            </h1>
+
+                            <!-- Name -->
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control rounded-0" placeholder="Name">
+                            </div>
+
+                            <!-- Surname -->
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control rounded-0" placeholder="E-mail">
+                            </div>
+
+                            <!-- Sibject -->
+                            <div class="form-group text-left col-md-12">
+                                <input type="text" class="form-control rounded-0" placeholder="Subject">
+                            </div>
+                                
+                            <!-- Message -->
+                            <div class="form-group text-left col-md-12">
+                                <input type="text" class="form-control rounded-0" placeholder="Message">
+                            </div>
+                            
+                            <!-- Send -->
+                            <button type="button" class="btn btn-dark w-100">Send</button>
+                            
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
 		<?php require "php/common/jsForBootstrap.php"?>
 
