@@ -10,6 +10,7 @@
 
         <?php require "php/common/headElements.php"; ?>
         <link rel="stylesheet" href="css/index/desktop.css">
+        <link rel="stylesheet" href="css/index/menuSpy/main.css">
 
 		<title>Home</title>
 
@@ -17,10 +18,21 @@
 
 	<body class="text-center">
 
+        <header id="main-header" class="side-menu">
+            <nav>
+                <ul>
+                    <li><a href="#aBriefStorySection"><span class="menuSpyItemSpan_alwaysActive">A brief Story</span></a></li>
+                    <li><a href="#educationSection"><span class="menuSpyItemSpan_alwaysActive">Education</span></a></li>
+                    <li><a href="#workingExperienceSection"><span class="menuSpyItemSpan_alwaysActive">Working Experience</span></a></li>
+                    <li><a href="#contactMeSection"><span class="menuSpyItemSpan_alwaysActive">Contact Me</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
 		<div class="container-fluid">
             
             <!-- Presentation Area -->
-            <div class="row presentationArea sectionGap">
+            <div id="presentationArea" class="row presentationArea sectionGap">
 
             
                 <!-- Name area -->
@@ -49,7 +61,7 @@
             <!-- About Me -->
             <div class="row sectionGap">
 
-                <div class="col section text-center ash-grey">
+                <div id="aboutMeSection" class="col section text-center ash-grey">
 
                     <div class="row mb-4">
                         <h1 class="w-100 titleFontFamily font-italic font-weight-bold ">
@@ -74,7 +86,7 @@
 
                     <div class="circle">
 
-                        <div class="row">
+                        <div id="aBriefStorySection" class="row">
 
                             <!-- Title -->
                             <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4">
@@ -106,7 +118,7 @@
 
                     <div class="circle">
 
-                        <div class="row">
+                        <div id="educationSection" class="row">
 
                             <!-- Title -->
                             <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4">
@@ -156,7 +168,7 @@
 
                     <div class="circle">
 
-                        <div class="row">
+                        <div id="workingExperienceSection" class="row">
                                 
                             <!-- Title -->
                             <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4 ">
@@ -250,7 +262,7 @@
                     <div class="circle">
 
                         <!-- Form -->
-                        <div class="form-row text-left">
+                        <div id="contactMeSection" class="form-row text-left">
                                 
                             <!-- Title -->
                             <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4 text-center">
@@ -282,8 +294,6 @@
                             
                         </div>
 
-
-
                     </div>
 
                 </div>
@@ -293,7 +303,10 @@
         </div>
 
 		<?php require "php/common/jsForBootstrap.php"?>
-
+        <script src="js/menuSpy/menuspy.min.js"></script>
+        <script src="js/menuSpy/menuSpyInit.js"></script>
+        <script src="js/menuSpy/menuSpyColorChanger.js"></script>
+        
 	</body>
 
 </html>

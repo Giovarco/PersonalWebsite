@@ -57,3 +57,25 @@ p {
     padding-top: 5%;
     padding-bottom: 7%;
 }
+
+.menuSpyItemSpan_alwaysActive {
+    visibility: visible !important;
+    transform: translate3d(0, 0, 0) !important;
+    opacity: 1 !important;
+}
+
+.menuSpyItemSpan_blackColor {
+    color: black !important;
+}
+
+header {
+    z-index: 1;
+}
+
+.side-menu a[isBlack=true]:after {
+    border: 2px solid black !important;
+}
+
+.side-menu .active a[isBlack=true]:after {
+    background: black !important;
+}
