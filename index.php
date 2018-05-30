@@ -1,3 +1,7 @@
+<?php
+    require_once "php/BundleLoader.php";
+    BundleLoader::init();
+?>
 <!doctype html>
 <html lang="en">
 
@@ -12,7 +16,9 @@
         <link rel="stylesheet" href="css/index/desktop.css">
         <link rel="stylesheet" href="css/index/menuSpy/main.css">
 
-		<title>Home</title>
+		<title>
+            <?= BundleLoader::getValue("index", "INDEX_PAGE_TITLE") ?>
+        </title>
 
 	</head>
 
@@ -21,10 +27,38 @@
         <header id="main-header" class="side-menu">
             <nav>
                 <ul>
-                    <li><a href="#aBriefStorySection"><span class="menuSpyItemSpan_alwaysActive">A brief Story</span></a></li>
-                    <li><a href="#educationSection"><span class="menuSpyItemSpan_alwaysActive">Education</span></a></li>
-                    <li><a href="#workingExperienceSection"><span class="menuSpyItemSpan_alwaysActive">Working Experience</span></a></li>
-                    <li><a href="#contactMeSection"><span class="menuSpyItemSpan_alwaysActive">Contact Me</span></a></li>
+                    <li>
+                        <a href="#aBriefStorySection">
+                            <span class="menuSpyItemSpan_alwaysActive">
+                                <?= BundleLoader::getValue("index", "INDEX_A-BRIEF-STORY-SECTION_TITLE") ?>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#educationSection">
+                            <span class="menuSpyItemSpan_alwaysActive">
+                                <?= BundleLoader::getValue("index", "INDEX_EDUCATION-SECTION_TITLE") ?>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#workingExperienceSection">
+                            <span class="menuSpyItemSpan_alwaysActive">
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_TITLE") ?>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contactMeSection">
+                            <span class="menuSpyItemSpan_alwaysActive">
+                                <?= BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_TITLE") ?>
+                            </span>
+                        </a>
+                    </li>
+
                 </ul>
             </nav>
         </header>
@@ -33,20 +67,15 @@
             
             <!-- Presentation Area -->
             <div id="presentationArea" class="row presentationArea sectionGap">
-
             
                 <!-- Name area -->
                 <div class="col align-self-center">
                     <div class="presentationAreaText">
                         <h1 class="text-right titleFontFamily">
-                            MARIO
-                            <br>
-                            MIGNEMI
+                            <?= BundleLoader::getValue("index", "INDEX_PRESENTATION-AREA_NAME-AND-SURNAME") ?>
                         </h1>
                         <h2 class="text-right subtitleFontFamily">
-                            Bachelor's Degree in
-                            <br>
-                            Computer Science
+                            <?= BundleLoader::getValue("index", "INDEX_PRESENTATION-AREA_SUBTITLE") ?>
                         </h2>
                     </div>
                 </div>
@@ -65,13 +94,13 @@
 
                     <div class="row mb-4">
                         <h1 class="w-100 titleFontFamily font-italic font-weight-bold ">
-                            About me
+                            <?= BundleLoader::getValue("index", "INDEX_ABOUT-ME-SECTION_TITLE") ?>
                         </h1>
                     </div>
 
                     <div class="row">
                         <p class="w-100 subtitleFontFamily">
-                            I am a recent graduate in Computer Science with a foreign languages diploma and some work experience whosedream is to become a full-time software developer.
+                            <?= BundleLoader::getValue("index", "INDEX_ABOUT-ME-SECTION_CONTENT") ?>
                         </p>
                     </div>
 
@@ -90,18 +119,12 @@
 
                             <!-- Title -->
                             <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4">
-                                A brief story
+                                <?= BundleLoader::getValue("index", "INDEX_A-BRIEF-STORY-SECTION_TITLE") ?>
                             </h1>
 
                             <!-- Description -->
                             <p class="w-100 subtitleFontFamily">
-                                Learning how to program has always been the goal of my life. It started with videogames, which I always have had an affinity with. Playing has never been enough nonetheless. What were there really behind them?
-                                <br><br>
-                                I took the first steps towards programming learning Dark Basic, a structured form of BASIC.
-                                <br><br>
-                                Because of various vicissitudes, in September 2008, I was not able to apply to a computer science oriented high school, so I chose a foreign language high school. Foreign languages were my new interest: English, French, Spanish and Latin plus German and Japanese. I also was lucky enough to go abroad and participate in various language courses in Europe.
-                                <br><br>
-                                However, after graduating in June 2013, I did not forget my old passion for programming and I applied to the university to obtain a bachelor's degree in Computer Science.
+                                <?= BundleLoader::getValue("index", "INDEX_A-BRIEF-STORY-SECTION_CONTENT") ?>
                             </p>
                         </div>
 
@@ -122,35 +145,33 @@
 
                             <!-- Title -->
                             <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4">
-                                Education
+                                <?= BundleLoader::getValue("index", "INDEX_EDUCATION-SECTION_TITLE") ?>
                             </h1>
 
                             <!-- University of Catania -->
                             <p class="w-100 font-weight-bold mb-2">
-                                Oct 2013 – Feb 2017
+                                <?= BundleLoader::getValue("index", "INDEX_EDUCATION-SECTION_DATE-RANGE_1") ?>
                                 <br>
-                                University of Catania
+                                <?= BundleLoader::getValue("index", "INDEX_EDUCATION-SECTION_LOCATION_1") ?>
                             </p>
 
                             <!-- Description -->
                             <p class="w-100 subtitleFontFamily mb-5">
-                                The bachelor's degree in Computer Science includes activities aimed at acquiring basic knowledge of discrete mathematics and differential and integral calculus, along with fundamental knowledge on key areas of information technology (including, theoretica foundations of computer science, algorithms, operating systems, databases, and HCI, software engineering, Computer Networks and Information Systems Security)
+                                <?= BundleLoader::getValue("index", "INDEX_EDUCATION-SECTION_CONTENT_1") ?>
                             </p>
                             
                             <br><br><br>
 
                             <!-- Liceo Statale "Ettore Majorana" -->
                             <p class="w-100 font-weight-bold  mb-2">
-                                Sep 2008–Jun 2013
+                                <?= BundleLoader::getValue("index", "INDEX_EDUCATION-SECTION_DATE-RANGE_2") ?>
                                 <br>
-                                Liceo Statale "Ettore Majorana"
+                                <?= BundleLoader::getValue("index", "INDEX_EDUCATION-SECTION_LOCATION_2") ?>
                             </p>
 
                             <!-- Description -->
                             <p class="w-100 subtitleFontFamily">
-                                Foreign Languages Diploma
-                                <br><br>
-                                Studied languages: English, French, Spanish, Latin
+                                <?= BundleLoader::getValue("index", "INDEX_EDUCATION-SECTION_CONTENT_2") ?>
                             </p>
 
                         </div>
@@ -172,79 +193,70 @@
                                 
                             <!-- Title -->
                             <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4 ">
-                                Working Experience
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_TITLE") ?>
                             </h1>
 
                             <!-- Internship at Imagination Computer Services -->
                             <p class="w-100 font-weight-bold mb-2">
-                                Jun 2017–Aug 2017
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_DATE-RANGE_1") ?>
                                 <br>
-                                Internship at Imagination Computer Services
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_LOCATION_1") ?>
                             </p>
 
                             <!-- Description -->
                             <p class="w-100 subtitleFontFamily text-left mb-0">
-                                Duties:
+                                <?= BundleLoader::getValue("index", "INDEX_DUTIES_TEXT") ?>
                             </p>
                             <ul class="subtitleFontFamily text-left mb-5">
-                                <li>Build an authentication system to control the access to company services</li>
-                                <li>Program mockups</li>
-                                <li>Read and process large XML streams</li>
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_BULLETED-LIST_CONTENT_1") ?>
                             </ul>
                             
                             <br><br><br>
 
                             <!-- Voluntary work at Riot Games -->
                             <p class="w-100 font-weight-bold mb-2">
-                                Jan 2016–Aug 2016
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_DATE-RANGE_2") ?>
                                 <br>
-                                Voluntary work at Riot Games
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_LOCATION_2") ?>
                             </p>
 
                             <!-- Description -->
                             <p class="w-100 subtitleFontFamily text-left mb-0">
-                                Duties:
+                                <?= BundleLoader::getValue("index", "INDEX_DUTIES_TEXT") ?>
                             </p>
                             <ul class="subtitleFontFamily text-left mb-5">
-                                <li>Translate game content from English to Italian</li>
-                                <li>Take part in meeting and brainstormings with other european volunteers to organize collective projects or contests</li>
-                                <li>Moderate the italian board through the back-end platform</li>
-                                <li>Offer generic support to players</li>
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_BULLETED-LIST_CONTENT_2") ?>
                             </ul>
 
                             <!-- Tutoring at Art School of Catania -->
                             <p class="w-100 font-weight-bold mb-2">
-                                Nov 2014 – Feb 2015
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_DATE-RANGE_3") ?>
                                 <br>
-                                Tutoring at Art School of Catania
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_LOCATION_3") ?>
                             </p>
 
                             <!-- Description -->
                             <p class="w-100 subtitleFontFamily text-left mb-0">
-                                Duties:
+                                <?= BundleLoader::getValue("index", "INDEX_DUTIES_TEXT") ?>
                             </p>
                             <ul class="subtitleFontFamily text-left mb-5">
-                                <li>Give lectures of artistic programming using Processing (Java)</li>
-                                <li>Clarify doubts of students</li>
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_BULLETED-LIST_CONTENT_3") ?>
                             </ul>
 
                             <!-- Analyst at Deloitte Consulting -->
                             <p class="w-100 font-weight-bold mb-2">
-                                Nov 2017 – Today
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_DATE-RANGE_4") ?>
                                 <br>
-                                Analyst at Deloitte Consulting
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_LOCATION_4") ?>
                             </p>
 
                             <!-- Description -->
                             <p class="w-100 subtitleFontFamily text-left mb-0">
-                                Duties:
+                                <?= BundleLoader::getValue("index", "INDEX_DUTIES_TEXT") ?>
                             </p>
                             <ul class="subtitleFontFamily text-left mb-5">
-                                <li>Implementation and maintenance of front-end and back-end features</li>
-                                <li>Customer Support</li>
+                                <?= BundleLoader::getValue("index", "INDEX_WORKING-EXPERIENCE-SECTION_BULLETED-LIST_CONTENT_4") ?>
                             </ul>
-
-
 
                         </div>
 
@@ -266,31 +278,37 @@
                                 
                             <!-- Title -->
                             <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4 text-center">
-                                Contact Me
+                                <?= BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_TITLE") ?>
                             </h1>
 
                             <!-- Name -->
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control rounded-0" placeholder="Name">
+                                <?php $contactMeSectionNamePlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_NAME_PLACEHOLDER") ?>
+                                <input type="text" class="form-control rounded-0" placeholder="<?= $contactMeSectionNamePlaceholder ?>">
                             </div>
 
                             <!-- Surname -->
                             <div class="form-group col-md-6">
-                                <input type="email" class="form-control rounded-0" placeholder="E-mail">
+                                <?php $contactMeSectionEmailPlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_E-MAIL_PLACEHOLDER") ?>
+                                <input type="email" class="form-control rounded-0" placeholder="<?= $contactMeSectionEmailPlaceholder ?>">
                             </div>
 
-                            <!-- Sibject -->
+                            <!-- Subject -->
                             <div class="form-group text-left col-md-12">
-                                <input type="text" class="form-control rounded-0" placeholder="Subject">
+                                <?php $contactMeSectionSubjectPlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_SUBJECT_PLACEHOLDER") ?>
+                                <input type="text" class="form-control rounded-0" placeholder="<?= $contactMeSectionSubjectPlaceholder ?>">
                             </div>
                                 
                             <!-- Message -->
                             <div class="form-group text-left col-md-12">
-                                <input type="text" class="form-control rounded-0" placeholder="Message">
+                                <?php $contactMeSectionMessagePlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_MESSAGE_PLACEHOLDER") ?>
+                                <input type="text" class="form-control rounded-0" placeholder="<?= $contactMeSectionMessagePlaceholder ?>">
                             </div>
                             
                             <!-- Send -->
-                            <button type="button" class="btn btn-dark w-100">Send</button>
+                            <button type="button" class="btn btn-dark w-100">
+                                <?= BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_SEND-MESSAGE_BUTTON") ?>
+                            </button>
                             
                         </div>
 
@@ -306,7 +324,7 @@
         <script src="js/menuSpy/menuspy.min.js"></script>
         <script src="js/menuSpy/menuSpyInit.js"></script>
         <script src="js/menuSpy/menuSpyColorChanger.js"></script>
-        
+
 	</body>
 
 </html>
