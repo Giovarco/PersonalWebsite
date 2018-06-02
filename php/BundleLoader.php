@@ -38,7 +38,7 @@
 
             // Get language (e.g.: "EN")
             $language = self::getLanguage();
-            
+
             // Get bundle content by name and language
             $bundleContent = self::getBundleContent($bundleName, $language);
 
@@ -51,7 +51,7 @@
         private static function getLanguage() {
 
             // Get language from URL. If it does not exist, default value is "EN"
-            $language = isset( $GET['lang'] ) ? $GET['lang'] : "EN";
+            $language = isset( $_GET['lang'] ) ? $_GET['lang'] : "EN";
 
             // Check if the language is supported
             if(self::isSupportedLanguage($language)) {
