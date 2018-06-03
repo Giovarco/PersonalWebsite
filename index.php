@@ -1,5 +1,7 @@
 <?php
     require_once "php/BundleLoader.php";
+    require_once "php/NavBarMenuView.php";
+
     BundleLoader::init();
 ?>
 <!doctype html>
@@ -24,6 +26,20 @@
 
 	<body class="text-center">
 
+        <nav class="navbar navbar-expand-lg navbar-dark dark-background">
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <?php
+                        $navBarView = new NavBarMenuView();
+                        $navBarView->generateHtml();
+                    ?>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!-- Side Menu -->
         <header id="main-header" class="side-menu">
             <nav>
                 <ul>
@@ -63,6 +79,7 @@
             </nav>
         </header>
 
+        <!-- Main Content -->
 		<div class="container-fluid">
             
             <!-- Presentation Area -->

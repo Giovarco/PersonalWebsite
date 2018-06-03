@@ -79,3 +79,7 @@ header {
 .side-menu .active a[isBlack=true]:after {
     background: black !important;
 }
+
+.dark-background {
+    background-color: #2d2d2d;
+}
