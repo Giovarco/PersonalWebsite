@@ -5,7 +5,7 @@
         private $supportedLanguagesKeyValue;
 
         function __construct() {
-            $this->supportedLanguagesKeyValue = "EN,DE";
+            $this->supportedLanguagesKeyValue = BundleLoader::getValue("configuration", "SUPPORTED_LANGUAGES");
         }
 
         private function generateMenuElement($lang) {

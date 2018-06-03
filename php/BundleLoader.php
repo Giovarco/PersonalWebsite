@@ -14,6 +14,12 @@
             // Let $bundles be a empty array
             self::$bundles = array();
 
+            // Special case: get configuration content from file
+            $fileContent = parse_ini_file("bundle/configuration.ini");
+
+            // Special case: Cache configuration
+            self::$bundles["configuration"] = $fileContent;
+
             // Get file names from bundle dir excluding . and ..
             $fileNames = array_diff( scandir(self::$bundleDir), array('..', '.') );
             
@@ -80,6 +86,12 @@
 
         // This functions return a bundle object depending on bundle name and language
         private static function getBundleContent($bundleName, $language) {
+
+            // Special case
+            if($bundleName == "configuration") {
+                return self::$bundles[$bundleName];
+            }
+
             return self::$bundles[$bundleName."_".$language];
         }
 
