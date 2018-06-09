@@ -16,6 +16,7 @@
 
         <?php require "php/common/headElements.php"; ?>
         <link rel="stylesheet" href="css/index/desktop.css">
+        <link rel="stylesheet" href="css/index/mobile.css">
         <link rel="stylesheet" href="css/index/menuSpy/main.css">
 
 		<title>

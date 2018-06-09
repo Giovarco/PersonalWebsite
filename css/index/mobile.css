@@ -1,0 +1,7 @@
+@media (max-width: 576px) {
+
+    .side-menu {
+        display: none !important;
+    }
+
+}
