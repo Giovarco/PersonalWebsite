@@ -87,7 +87,7 @@
             <div id="presentationArea" class="row presentationArea sectionGap">
             
                 <!-- Name area -->
-                <div class="col align-self-center">
+                <div class="col-sm-6 align-self-center">
                     <div class="presentationAreaText">
                         <h1 class="text-right titleFontFamily">
                             <?= BundleLoader::getValue("index", "INDEX_PRESENTATION-AREA_NAME-AND-SURNAME") ?>
@@ -99,8 +99,8 @@
                 </div>
 
                 <!-- Photo area -->
-                <div class="col">
-                    <img class="float-left" src="img/Mario.png">
+                <div class="col-sm-6">
+                    <img class="float-sm-left photoAreaImage" src="img/Mario.png">
                 </div>
 
             </div>

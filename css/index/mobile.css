@@ -1,7 +1,19 @@
-@media (max-width: 576px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
 
     .side-menu {
         display: none !important;
     }
 
+    .presentationAreaText h1,  .presentationAreaText h2 {
+        text-align: center !important;
+    }
+    .presentationArea h1 {
+        font-size: 49px;
+    }
+
+    .presentationAreaText {
+        padding-right: 0%;
+    }
+    
 }
