@@ -27,9 +27,13 @@
 
 	<body class="text-center">
 
-        <nav class="navbar navbar-expand-lg navbar-dark dark-background">
+        <nav class="navbar navbar-expand-sm navbar-dark dark-background">
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav mr-auto">
                     <?php
                         $navBarView = new NavBarMenuView();
