@@ -1,0 +1,50 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .side-menu {
+        display: none !important;
+    }
+
+    .presentationAreaText h1,  .presentationAreaText h2 {
+        text-align: center !important;
+    }
+    .presentationArea h1 {
+        font-size: 49px;
+    }
+
+    .presentationAreaText {
+        padding-right: 0%;
+    }
+    
+    h1, h2 {
+        font-size: 2em !important;
+    }
+
+    .section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .circle h1 {
+        font-size: 29px !important;
+    }
+
+    .circle {
+        border-radius: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .sectionGap {
+        margin-bottom: 60px;
+    }
+    
+}

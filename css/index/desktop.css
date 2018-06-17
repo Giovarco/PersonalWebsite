@@ -1,0 +1,91 @@
+.presentationArea {
+    background-color:#443e3e;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sectionGap {
+    margin-bottom: 130px;
+}
+
+.titleFontFamily {
+    font-family: 'Times New Roman', serif;
+}
+
+.subtitleFontFamily {
+    font-family: sans-serif;
+}
+
+.presentationArea h1 {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+}
+
+.presentationArea h2 {
+    color: white;
+    font-size: 23px;
+}
+
+.section {
+    padding-left: 31%;
+    padding-right: 31%;
+}
+
+p {
+    line-height: 28px;
+}
+
+.ash-grey {
+    color: #383838;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: rgba(219, 217, 217, 0.6);
+
+    margin-left: 17%;
+    margin-right: 17%;
+
+    padding-left: 13.5%;
+    padding-right: 13.5%;
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+
+.menuSpyItemSpan_alwaysActive {
+    visibility: visible !important;
+    transform: translate3d(0, 0, 0) !important;
+    opacity: 1 !important;
+}
+
+.menuSpyItemSpan_blackColor {
+    color: black !important;
+}
+
+header {
+    z-index: 1;
+}
+
+.side-menu a[isBlack=true]:after {
+    border: 2px solid black !important;
+}
+
+.side-menu .active a[isBlack=true]:after {
+    background: black !important;
+}
+
+.dark-background {
+    background-color: #2d2d2d;
+}
+
+.photoAreaImage {
+    width: 100%;
+    max-width: 388px;
+    height: 100%;
+}
+
+.presentationAreaText {
+    padding-right: 25%;
+}
