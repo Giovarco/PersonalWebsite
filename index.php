@@ -295,44 +295,42 @@
 
                     <div class="circle">
 
-                        <!-- Form -->
-                        <div id="contactMeSection" class="form-row text-left">
+                        <form action="javascript: emailSender.send();" > 
+
+                            <!-- Form -->
+                            <div id="contactMeSection" class="form-row text-left">
                                 
-                            <!-- Title -->
-                            <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4 text-center">
-                                <?= BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_TITLE") ?>
-                            </h1>
+                                <!-- Title -->
+                                <h1 class="w-100 titleFontFamily font-italic font-weight-bold mb-4 text-center">
+                                    <?= BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_TITLE") ?>
+                                </h1>
 
-                            <!-- Name -->
-                            <div class="form-group col-md-6">
-                                <?php $contactMeSectionNamePlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_NAME_PLACEHOLDER") ?>
-                                <input type="text" class="form-control rounded-0" placeholder="<?= $contactMeSectionNamePlaceholder ?>">
-                            </div>
+                                <!-- Name -->
+                                <div class="form-group col-sm-12">
+                                    <?php $contactMeSectionNamePlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_NAME_PLACEHOLDER") ?>
+                                    <input id="emailName" type="text" class="form-control rounded-0" required placeholder="<?= $contactMeSectionNamePlaceholder ?>">
+                                </div>
 
-                            <!-- Surname -->
-                            <div class="form-group col-md-6">
-                                <?php $contactMeSectionEmailPlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_E-MAIL_PLACEHOLDER") ?>
-                                <input type="email" class="form-control rounded-0" placeholder="<?= $contactMeSectionEmailPlaceholder ?>">
-                            </div>
-
-                            <!-- Subject -->
-                            <div class="form-group text-left col-md-12">
-                                <?php $contactMeSectionSubjectPlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_SUBJECT_PLACEHOLDER") ?>
-                                <input type="text" class="form-control rounded-0" placeholder="<?= $contactMeSectionSubjectPlaceholder ?>">
-                            </div>
+                                <!-- Subject -->
+                                <div class="form-group text-left col-sm-12">
+                                    <?php $contactMeSectionSubjectPlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_SUBJECT_PLACEHOLDER") ?>
+                                    <input id="emailSubject" type="text" class="form-control rounded-0" required placeholder="<?= $contactMeSectionSubjectPlaceholder ?>">
+                                </div>
+                                    
+                                <!-- Message -->
+                                <div class="form-group text-left col-sm-12">
+                                    <?php $contactMeSectionMessagePlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_MESSAGE_PLACEHOLDER") ?>
+                                    <textarea id="emailMessage" class="form-control" rows="7" required placeholder="<?= $contactMeSectionMessagePlaceholder ?>" data-role="none" ></textarea>
+                                </div>
                                 
-                            <!-- Message -->
-                            <div class="form-group text-left col-md-12">
-                                <?php $contactMeSectionMessagePlaceholder = BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_MESSAGE_PLACEHOLDER") ?>
-                                <input type="text" class="form-control rounded-0" placeholder="<?= $contactMeSectionMessagePlaceholder ?>">
+                                <!-- Send -->
+                                <button type="submit" class="btn btn-dark w-100">
+                                    <?= BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_SEND-MESSAGE_BUTTON") ?>
+                                </button>
+                                
                             </div>
-                            
-                            <!-- Send -->
-                            <button type="button" class="btn btn-dark w-100">
-                                <?= BundleLoader::getValue("index", "INDEX_CONTACT-ME-SECTION_SEND-MESSAGE_BUTTON") ?>
-                            </button>
-                            
-                        </div>
+
+                        </form>
 
                     </div>
 
@@ -346,6 +344,7 @@
         <script src="js/menuSpy/menuspy.min.js"></script>
         <script src="js/menuSpy/menuSpyInit.js"></script>
         <script src="js/menuSpy/menuSpyColorChanger.js"></script>
+        <script src="js/emailSender.js"></script>
 
 	</body>
 
