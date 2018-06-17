@@ -10,7 +10,12 @@
 
         private function generateMenuElement($lang) {
 
-            $isActive = ($_GET['lang'] == $lang) ? true : false;
+            if( isset($_GET['lang']) ) {
+                $isActive = ($_GET['lang'] == $lang) ? true : false;
+            } else {
+                $isActive = ("EN" == $lang) ? true : false;
+            }
+            
             $activeClass = ($isActive == true) ? "active" : "";
 
             echo '<li class="nav-item '.$activeClass.'">';
